@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+    --text-display: 4rem;
+    --text-title: 2.5rem;
+    --text-subtitle: 1.75rem;
+    --text-body: 1rem;
+    --text-small: 0.875rem;
+    --text-tiny: 0.75rem;
+  
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.6;
+    --line-height-loose: 1.8;
+  
+    --letter-spacing-wide: 0.02em;
+    --letter-spacing-wider: 0.07em;
+    --letter-spacing-ultra-wider: 0.10em;
+  }
+
+h1,h2,h3 {
+    text-transform: uppercase;
+  }
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h1 {
+    font-size: var(--text-display);
+    font-weight: 500;
+    letter-spacing: var(--letter-spacing-ultra-wider);
+  }
+  
+h2 {
+  font-size: var(--text-title);
+  letter-spacing: var(--letter-spacing-ultra-wider);
+}
+
+h3 {
+  font-size: var(--text-subtitle);
+}
+
+p {
+  font-size: var(--text-body);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-wide);
+}
