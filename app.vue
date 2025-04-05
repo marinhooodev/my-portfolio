@@ -1,3 +1,12 @@
 <template>
-  <naive-config><NuxtPage /></naive-config>
+
+  <UApp>
+    <NuxtPage />
+  </UApp>
 </template>
+
+<script>
+definePageMeta({
+  colorMode: 'light',
+})
+</script>

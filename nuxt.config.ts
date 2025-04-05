@@ -17,6 +17,8 @@ export default defineNuxtConfig({
       "@nuxt/content",
       "@nuxtjs/i18n",
       "@nuxtjs/google-fonts",
+      "@nuxt/ui",
+      '@nuxtjs/color-mode'
     ],
     css: ["~/styles/global.css"],
     googleFonts: {
@@ -39,5 +41,15 @@ export default defineNuxtConfig({
              optimizeTranslationDirective: false,
          },
      },
-    
+     colorMode: {
+        preference: 'light', // default value of $colorMode.preference
+        fallback: 'light', // fallback value if not system preference found
+        hid: 'nuxt-color-mode-script',
+        globalName: '__NUXT_COLOR_MODE__',
+        componentName: 'ColorScheme',
+        classPrefix: '',
+        classSuffix: '-mode',
+        storage: 'localStorage', // or 'sessionStorage' or 'cookie'
+        storageKey: 'nuxt-color-mode'
+      }
 });

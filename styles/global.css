@@ -1,6 +1,17 @@
 @import "tailwindcss";
+@import "@nuxt/ui";
 
-@theme {
+@theme static {
+
+  --color-page: #f8f9fa;
+
+  --color-white: #ffffff;
+  --color-white-soft: #fcfcfc;
+  --color-white-alt: #f5f5f5;
+  --color-white-muted: #eeeeee;
+
+  --color-text-default: #6b6b6b;
+
     --text-display: 4rem;
     --text-title: 2.5rem;
     --text-subtitle: 1.75rem;
@@ -12,9 +23,9 @@
     --line-height-normal: 1.6;
     --line-height-loose: 1.8;
   
-    --letter-spacing-wide: 0.02em;
-    --letter-spacing-wider: 0.07em;
-    --letter-spacing-ultra-wider: 0.10em;
+    --tracking-wide: 0.02em;
+    --tracking-wider: 0.07em;
+    --tracking-ultra-wider: 0.10em;
   }
 
 h1,h2,h3 {
@@ -23,17 +34,18 @@ h1,h2,h3 {
 
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
+    background: #f8f9fa;
 }
 
 h1 {
     font-size: var(--text-display);
     font-weight: 500;
-    letter-spacing: var(--letter-spacing-ultra-wider);
+    letter-spacing: var(--tracking-ultra-wider);
   }
   
 h2 {
   font-size: var(--text-title);
-  letter-spacing: var(--letter-spacing-ultra-wider);
+  letter-spacing: var(--tracking-ultra-wider);
 }
 
 h3 {
@@ -43,5 +55,5 @@ h3 {
 p {
   font-size: var(--text-body);
   line-height: var(--line-height-normal);
-  letter-spacing: var(--letter-spacing-wide);
+  letter-spacing: var(--tracking-wide);
 }
